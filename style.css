@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Utilities classes */
+
+.btn-primary {
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: 5px;
+    padding: 10px 30px;
+    background: #a72839;
+    color: #fff;
+}
+.btn-secondary {
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: 5px;
+    padding: 10px 30px;
+    background: #0284d0;
+    color: #fff;
+}
+
+.active-primary {
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: 5px;
+    padding: 10px 30px;
+    background-color: #f1f1f1;
+    color: #a72839;
+}
+
+.active-secondary {
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: 5px;
+    padding: 10px 30px;
+    background-color: #f1f1f1;
+    color: #0284d0;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 1px solid #fff;
+}
+
+/* Main Content */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: #333;
+    color: #fff;
+    line-height: 1.6;
+    margin-left: 160px;
+    padding: 0px 10px;
+}
+
+/* Navbar */
+.side-navbar {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #a72839;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+.side-navbar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #333;
+    display: block;
+}
+.side-navbar a:hover {
+    color: #f1f1f1;
+}
+
+.side-navbar ul {
+    list-style: none;
+}
+
+/* Header */
+.title {
+    background: url(./img/rathalos.jpg) no-repeat;
+}
+.title .content {
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #a72839;
+}
+
+/* content columns */
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 2rem;
+}
+
+.container h3 {
+    padding-bottom: 5px;
+    text-align: center;
+}
+.row-1 {
+    display: flex;
+    flex-direction: column;
+}
+.row-2 .monster-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.row-3 ul {
+    list-style: none;
+}
+
+.row-3 .monster {
+    margin: 5px 0;
+}
+ .row-3 span {
+     text-transform: uppercase;
+ }
+
+/* Hidden active classes */
+.active {
+
+}
+
+.hidden {
+    visibility: hidden;
+}
