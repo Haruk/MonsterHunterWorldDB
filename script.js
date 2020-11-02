@@ -11,12 +11,26 @@ zoneListButton.forEach(function(zoneListButton) {
 
 function activeButton (e) {
     const buttonClick = e.target;
+        
         if (buttonClick.classList.contains('btn-primary')){
+            
             buttonClick.classList.replace('btn-primary','active-primary');
         }else {
             buttonClick.classList.replace('active-primary','btn-primary');
-        };
+        }; 
+        
     };
+    
+// Sprawdzenie czy klaca active-button jest juz wcześniej nadana i ją wyłącza, za to nadaje ją klikniętemu buttonowi IN PROGRESS
+function checkIfActive() {
+    for (let i=0; i<zoneListButton.length; i++){
+        if (zoneListButton.classList.contains('active-primary')){
+            zoneListButton.classList.remove('active-primary');
+            zoneListButton.classList.add('btn-primary'); 
+            brake;
+        }};
+    };
+
 
 // Zmieania klasę na active po kliknięciu. DZIAŁA (zostaje klasa active)
     // function activeButton (e) {
@@ -50,16 +64,4 @@ function activeButton (e) {
 //     };
 
 
-// Sprawdzenie czy klasa active-button jest juz wcześniej nadana i ją wyłącza, za to nadaje ją klikniętemu buttonowi IN PROGRESS
-// function activeButton (e) {
-//     const buttonClick = e.target;
-//     for (let i=0; i<zoneListButton.length; i++){
-//         if (buttonClick.classList.contains('btn-primary')){
-//             buttonClick.classList.remove('btn-primary');
-//             buttonClick.classList.add('active-primary'); 
-//         }else {
-//             buttonClick.classList.remove('active-primary');
-//             buttonClick.classList.add('btn-primary');
-//         }
-//     }};
 
