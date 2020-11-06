@@ -11,7 +11,7 @@ function activeButton(e) {
     checkIfActive();
     const buttonClick = e.target;
         buttonClick.classList.replace('btn-primary','active-primary');
-    displayMonsters();//wstawia buttony potworów w drugiej kolumnie
+    createMonsterButton();//wstawia buttony potworów w drugiej kolumnie
     };
 
 // Sprawdzenie czy klasa active-button jest juz wcześniej nadana i ją wyłącza
@@ -25,8 +25,13 @@ function checkIfActive() {
 
 // Wyświetla liste potworów z danego zone'a
 
-function displayMonsters() {
-
+function createMonsterButton() {
+    const monsterButton = document.createElement('button');
+    monsterButton.className = 'btn-secondary tab-monster';
+    monsterRow.appendChild(monsterButton);
+    for(i=0; i<ancientMonsterList.length; i++){
+        monsterButton.innerHTML=ancientMonsterList[i];
+    };
 };
 
 
