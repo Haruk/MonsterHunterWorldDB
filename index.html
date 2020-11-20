@@ -14,7 +14,6 @@
     <nav class="side-navbar"> 
         <ul>
             <li><a href="#">By Zone</a></li>
-            <li><a href="#">By Status</a></li>
             <li><a href="#">By Element</a></li>
             <li><a href="#">By Type</a></li>
         </ul>
@@ -28,8 +27,9 @@
     </header>
     
     <div class="container">
-        <div id="zone" class="row-1">
+        <div class="row-1">
             <h3>Chose zone</h3>
+            <div id="zone" class="zone-content"></div>
             <button class="btn-primary tab-zone">Ancient Forest</button>
             <button class="btn-primary tab-zone">Wildspire Waste</button>
             <button class="btn-primary tab-zone">Coral Highland</button>
@@ -38,58 +38,10 @@
             <button class="btn-primary tab-zone">Invading Monsters</button>
             <button class="btn-primary tab-zone">Elder Dragons</button>
         </div>
-        <div id="monster" class="row-2">
+        <div  class="row-2">
             <h3>Chose monster</h3>
-            <div id="ancient" class="monster-content hidden">
-                <button class="btn-secondary tablink">Great Jagras</button>
-                <button class="btn-secondary tablink">KuluYaku</button>
-                <button class="btn-secondary tablink">PukeiPukei</button>
-                <button class="btn-secondary tablink">Tobi Kadachi</button>
-                <button class="btn-secondary tablink">Anjaneth</button>
-                <button class="btn-secondary tablink">Rathalos</button>
-            </div>
-            <div id="wildspire" class="monster-content hidden">
-                <button class="btn-secondary tablink">Juratodus</button>
-                <button class="btn-secondary tablink">Baroth</button>
-                <button class="btn-secondary tablink">Diablos</button>
-                <button class="btn-secondary tablink">Black Diablos</button>
-                <button class="btn-secondary tablink">Rathian</button>
-            </div>
-            <div id="coral" class="monster-content hidden">
-                <button class="btn-secondary tablink">Paloumu</button>
-                <button class="btn-secondary tablink">TziTziYaku</button>
-                <button class="btn-secondary tablink">Legiana</button>
-                <button class="btn-secondary tablink">Pink Rathian</button>
-                <button class="btn-secondary tablink">Kirin</button>
-            </div>
-            <div id="rotten" class="monster-content hidden">
-                <button class="btn-secondary tablink">Radoban</button>
-                <button class="btn-secondary tablink">Odogaron</button>
-                <button class="btn-secondary tablink">Great Girros</button>
-                <button class="btn-secondary tablink">Val Hazaak</button>                
-            </div>
-            <div id="elder" class="monster-content hidden">
-                <button class="btn-secondary tablink">Dodogama</button>
-                <button class="btn-secondary tablink">Uragan</button>
-                <button class="btn-secondary tablink">Lavasioth</button>
-                <button class="btn-secondary tablink">Nergigante</button>
-                <button class="btn-secondary tablink">Kushala Daora</button>
-                <button class="btn-secondary tablink">Teostra</button>
-                <button class="btn-secondary tablink">Lunastra</button>
-            </div>
-            <div id="dragons" class="monster-content hidden">
-                <button class="btn-secondary tablink">Kirin</button>
-                <button class="btn-secondary tablink">Val Hazaak</button>
-                <button class="btn-secondary tablink">Nergigante</button>
-                <button class="btn-secondary tablink">Kushala Daora</button>
-                <button class="btn-secondary tablink">Teostra</button>
-                <button class="btn-secondary tablink">Lunastra</button>
-                <button class="btn-secondary tablink">Kulve Taroth</button>
-            </div>
-            <div id="invader" class="monster-content hidden">
-                <button class="btn-secondary tablink">Deviljho</button>
-                <button class="btn-secondary tablink">Bazelgouse</button>
-                <button class="btn-secondary tablink">Behemoth</button>
+            <div id="monster" class="monster-content ">
+                
             </div>
         </div>
         <div id="data" class="row-3">
@@ -101,52 +53,14 @@
                     <li><span>Element:</span> Water</li>
                 </ul>
             </div>
-            <div class="monster hidden"><h3>Diablos</h3>
-                <ul>
-                    <li><span>Zone:</span> Wildspire Waste</li>
-                    <li><span>Type:</span> Brute Wyvern</li>
-                    <li><span>Status:</span> Sleep</li>
-                    <li><span>Element:</span> Ice</li>
-                </ul>
-            </div>
-            <div class="monster hidden"><h3>Legiana</h3>
-                <ul>
-                    <li><span>Zone:</span> Coral Highland</li>
-                    <li><span>Type:</span> Flying Wyvern</li>
-                    <li><span>Status:</span> Blast</li>
-                    <li><span>Element:</span> Water</li>
-                </ul>
-            </div>
-            <div class="monster hidden"><h3>Odogaron</h3>
-                <ul>
-                    <li><span>Zone:</span> Rotten Valley</li>
-                    <li><span>Type:</span> Fanged Wyvern</li>
-                    <li><span>Status:</span> Paralize</li>
-                    <li><span>Element:</span> Thunder</li>
-                </ul>
-            </div>
-            <div class="monster hidden"><h3>Nergigante</h3>
-                <ul>
-                    <li><span>Zone:</span> Elder Reces</li>
-                    <li><span>Type:</span> Elder Dragon</li>
-                    <li><span>Status:</span> Paralize</li>
-                    <li><span>Element:</span> Dragon</li>
-                </ul>
-            </div>
-            <div class="monster hidden"><h3>Deviljho</h3>
-                <ul>
-                    <li><span>Zone:</span> Invading</li>
-                    <li><span>Type:</span> Brute Wyvern</li>
-                    <li><span>Status:</span> Dragon</li>
-                    <li><span>Element:</span> none</li>
-                </ul>
-            </div>
+           
             
             
             
             
         </div>
     </div>
+    <script src="monsters.json"></script>
     <script src="script.js"></script>
 </body>
 </html>
